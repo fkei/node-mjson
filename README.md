@@ -57,6 +57,31 @@ $ echo '{"hoge": /** comment **/1}' |  mjson.js
 }
 ```
 
+## Case 3
+
+```
+$ echo '{"hoge": /** comment **/1}' |  mjson.js -i ' '
+--
+{
+ "hoge": 1
+}
+```
+
+# command-line options
+
+```
+$ mjson.js --help
+
+  Usage: mjson.js [options]
+
+  Options:
+
+    -h, --help            output usage information
+    -V, --version         output the version number
+    -d --debug            debug mode.
+    -i --indent <indent>  indent string (default: space 4)
+```
+
 # test
 
 ```
