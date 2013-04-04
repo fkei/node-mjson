@@ -57,7 +57,7 @@ $ echo '{"hoge": /** comment **/1}' |  mjson.js
 }
 ```
 
-## Case 3
+## Case 4 (indent 1)
 
 ```
 $ echo '{"hoge": /** comment **/1}' |  mjson.js -i ' '
