@@ -45,7 +45,7 @@ $ echo '{"hoge": 1}' |  mjson.js
 {
     "hoge": 1
 }
-
+```
 
 ## Case 3
 
@@ -56,8 +56,6 @@ $ echo '{"hoge": /** comment **/1}' |  mjson.js
     "hoge": 1
 }
 ```
-
-
 
 # test
 
