@@ -16,6 +16,7 @@ $ npm install mjson
 
 ```
 $ npm install https://github.com/fkei/node-mjson.git
+```
 
 # example
 
