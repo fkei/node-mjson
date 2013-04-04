@@ -3,6 +3,10 @@ node-mjson
 
 Command : \[JSON format string\]\(stdin\) -> mjson -> \[JSON shaping string\]\(stdout\)
 
+### TIPS
+
+Simple minifier for JSON to remove comments and whitespace.
+
 
 # install
 
