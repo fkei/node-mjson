@@ -94,6 +94,9 @@ $ make test
 $ make jshint
 ```
 
+# Changelog
+
+@see: [Changelog](https://github.com/fkei/node-mjson/blob/master/Changelog)
 
 # LICENSE
 
