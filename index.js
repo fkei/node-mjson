@@ -7,7 +7,7 @@
 var commander = require('commander');
 var jsonminify = require('jsonminify');
 var colors = require('colors');
-var VERSION = '0.2.0';
+var VERSION = '0.3.0';
 
 exports.main = function main () {
     colors.setTheme({
@@ -29,6 +29,7 @@ exports.main = function main () {
         .version(VERSION)
         .description('Formatted output to the standard output, standard input (string JSON)')
         .option('-d --debug', 'debug mode.')
+        .option('-C --color', 'color mode.')
         .option('-i --indent <indent>', 'indent string (default: space 4)', String, '    ')
         .parse(process.argv)
     ;
@@ -56,8 +57,14 @@ exports.main = function main () {
         stdin += chunk;
         debug(chunk);
     });
+
     process.stdin.on('end', function () {
+
         var output = JSON.stringify(JSON.parse(JSON.minify(stdin)), null, commander.indent);
-        console.log(output);
+        if (commander.color) {
+            output = output.replace(/\"(.*?)\"/g, "\"$1\"".green);
+            //output = output.replace(/\"(.*?)\"/g, colors['red']("\"$1\""));
+        }
+        process.stdout.write(output);
     });
 };

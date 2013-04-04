@@ -6,7 +6,7 @@ Command : \[JSON format string\]\(stdin\) -> mjson -> \[JSON shaping string\]\(s
 ### TIPS
 
 Simple minifier for JSON to remove comments and whitespace.
-
+Color mode support. (cmd-option: -C)
 
 # install
 
@@ -71,6 +71,16 @@ $ echo '{"hoge": /** comment **/1}' |  mjson.js -i ' '
 }
 ```
 
+## Case 5 (color mode)
+
+```
+$ echo '{"hoge": /** comment **/1}' |  mjson.js -i ' ' -C
+--
+{
+ "hoge": 1
+}
+```
+
 # command-line options
 
 ```
@@ -83,6 +93,7 @@ $ mjson.js --help
     -h, --help            output usage information
     -V, --version         output the version number
     -d --debug            debug mode.
+    -C --color            color mode.
     -i --indent <indent>  indent string (default: space 4)
 ```
 
