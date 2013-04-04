@@ -1,0 +1,46 @@
+{
+    "name": "mjson",
+    "version": "0.1.0",
+    "description": "Command : [JSON format string](stdin) -> mjson.js -> [JSON shaping string](stdout)",
+    "keywords": [
+        "node",
+        "json",
+        "JSON-like",
+        "comment",
+        "command"
+    ],
+    "homepage": "https://github.com/fkei/node-mjson",
+    "bugs": {
+        "email": "kei.topaz@gmail.com",
+        "url": "https://github.com/fkei/node-mjson/issues"
+    },
+    "author": {
+        "name": "Kei Funagayama",
+        "email": "kei.topaz@gmail.com",
+        "url": "https://github.com/fkei"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:fkei/node-mjson.git"
+    },
+    "dependencies": {
+        "commander": "*",
+        "jsonminify": "*",
+        "colors": "*"
+    },
+    "devDependencies": {
+        "jshint": "*"
+    },
+    "engines": {
+        "node": ">=0.8.0",
+        "npm": ">=1.1.0"
+    },
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "main": "./index.js",
+    "bin": {
+        "mjson.js": "./bin/mjson.js"
+    }
+}
