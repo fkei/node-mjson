@@ -5,8 +5,11 @@ Command : \[JSON format string\]\(stdin\) -> mjson -> \[JSON shaping string\]\(s
 
 ### TIPS
 
+```
 Simple minifier for JSON to remove comments and whitespace.
+
 Color mode support. (cmd-option: -C)
+```
 
 # install
 
