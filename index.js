@@ -7,7 +7,7 @@
 var commander = require('commander');
 var jsonminify = require('jsonminify');
 var colors = require('colors');
-var VERSION = '0.1.0';
+var VERSION = '0.2.0';
 
 exports.main = function main () {
     colors.setTheme({
