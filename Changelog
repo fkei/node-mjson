@@ -1,5 +1,7 @@
 Changelog
 
+* Thu Oct 17 2013 Kei FUNAGAYAMA <kei.topaz@gmail.com> - 0.4.1
+ - release 0.4.1
 * Thu Oct 17 2013 Kei FUNAGAYAMA <kei.topaz@gmail.com> - 0.4.0
  - release 0.4.0
   - Add: command-line options: select read file(-s)
