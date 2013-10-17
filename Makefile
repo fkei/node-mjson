@@ -4,6 +4,7 @@ jshint:
 	./node_modules/jshint/bin/jshint --config .jshintrc .
 
 test:
-	@echo '{"hoge": /** saaa **/"hoge"}' | node ./test/mjson.bin -d -i '  ' -C
+	cd test; ./test.sh
 	@echo
+
 .PHONY: all jshint test

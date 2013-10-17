@@ -84,8 +84,31 @@ $ echo '{"hoge": /** comment **/1}' |  mjson.js -i ' ' -C
 }
 ```
 
+
 # command-line options
 
+## Case 1: read file -> stdout
+
+```
+$ mjson.js -s ./comment.json
+```
+
+## Case 2 read file -> write file
+
+
+```
+$ mjson.js -s ./comment.json -o /tmp/test-mjson.json
+```
+
+## Case 3 read file (args) -> stdout
+
+```
+$ mjson.js ./comment.json
+```
+
+> Detailed usage, `test/test.sh`
+
+## help
 ```
 $ mjson.js --help
 
@@ -95,9 +118,14 @@ $ mjson.js --help
 
     -h, --help            output usage information
     -V, --version         output the version number
-    -d --debug            debug mode.
-    -C --color            color mode.
+    -d --debug            debug mode
+    -C --color            color mode
     -i --indent <indent>  indent string (default: space 4)
+    -s --src <src>        Read file path
+    -o --out <out>        Write file path
+    -e --encode <encode>  Read/Write file encode. default) utf8
+    -f --force            Overwrite output file
+
 ```
 
 # test
