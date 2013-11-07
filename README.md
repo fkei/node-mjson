@@ -11,6 +11,17 @@ Simple minifier for JSON to remove comments and whitespace.
 Color mode support. (cmd-option: -C)
 ```
 
+# ScreenShots
+
+**Success**
+
+![success](https://raw.github.com/fkei/node-mjson/master/screenshots/success.png)
+
+**Error**
+
+![error](https://raw.github.com/fkei/node-mjson/master/screenshots/error.png)
+
+
 # install
 
 ## npm repo
