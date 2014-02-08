@@ -11,7 +11,7 @@ var commander = require('commander');
 var jsonminify = require('jsonminify');
 var colors = require('colors');
 var jsonlint = require('jsonlint');
-var VERSION = '0.4.1';
+var VERSION = '0.4.2';
 
 //////////
 

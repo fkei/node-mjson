@@ -1,6 +1,6 @@
 {
     "name": "mjson",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "Command : [JSON format string](stdin) -> mjson.js -> [JSON shaping string](stdout)",
     "keywords": [
         "node",
