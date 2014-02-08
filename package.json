@@ -9,6 +9,9 @@
         "comment",
         "command"
     ],
+    "scripts": {
+        "test": "cd test; ./test.sh"
+    },
     "homepage": "https://github.com/fkei/node-mjson",
     "bugs": {
         "email": "kei.topaz@gmail.com",

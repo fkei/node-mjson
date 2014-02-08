@@ -1,6 +1,8 @@
 node-mjson
 ==========
 
+![Travis CI](https://travis-ci.org/fkei/node-mjson.png?branch=master)
+
 Command : \[JSON format string\]\(stdin\) -> mjson -> \[JSON shaping string\]\(stdout\)
 
 ### TIPS
